@@ -1,13 +1,35 @@
-{{ define "main" }}
+    {{ define "main" }}
 
-<!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} -->
+    <!-- {{ partial "jumbotron" (dict "imageUrl" .Params.image "title" .Title "subtitle" .Params.subtitle) }} -->
 
-<!-- {{ partial "short-text" .Params.blurb}} -->
+    <!-- {{ partial "short-text" .Params.blurb}} -->
 
-<!-- {{ partial "2-up" .Params }} -->
+    <!-- {{ partial "2-up" .Params }} -->
 
-<!-- {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }} -->
+    <!-- {{ partial "text-and-image" (dict "heading" .Params.values.heading "text" .Params.values.text "buttonText" "Read more" "buttonLink" "/values") }} -->
 
-<!-- {{ partial "blog" . }} -->
+    <!-- {{ partial "blog" . }} -->
 
-{{ end }}
+    <div class="galleryshow">
+    {{ range where .Site.RegularPages "Section" "gallery" }}
+        {{ if .Params.image }}
+            <div>
+                <a href="{{ .RelPermalink }}"><img src="{{ .Params.image }}" alt="{{ .Params.title }}" class="" /></a>
+            </div>
+        {{ end }}
+    {{ end }}
+    </div>
+
+    <script type="text/javascript">
+    jQuery(document).ready(function(){
+        jQuery('.galleryshow').slick({
+            dots: true,
+            infinite: true,
+            speed: 300,
+            slidesToShow: 2,
+            centerMode: true,
+            variableWidth: true
+            });
+        });
+    </script>
+    {{ end }}

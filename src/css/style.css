@@ -1,0 +1,20 @@
+.galleryshow .slick-slide{
+    height: 600px;
+}
+.galleryshow .slick-slide img{
+    max-height:100%;
+    padding:10px;
+}
+
+.galleryshow .slick-dots li.slick-active button:before{
+    color:#FFF;
+}
+
+nav a{
+    color:#FFF;
+    font-weight:200;
+    font-size:18px
+}
+body{
+    color:#FFF;
+}
