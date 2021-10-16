@@ -1,12 +1,12 @@
 {{ define "main" }}
 
-<div class="bg-off-white">
+<div class="bg-off-white gallery">
   <div class="mw7 center ph3">
     <ul class="flex-ns flex-wrap mhn1-ns pa3">
       
       {{ range $index, $element := .Pages }}
           {{ if modBool $index 2 }}
-              <div class="flex-m mhn3-m mb4">
+              <div class="flex-m mhn3-m mb4 items-center">
 
               <div class="ph3-m w-50-m">
                 <img src="{{.Params.image}}" alt="" class="db mb2">
@@ -16,12 +16,12 @@
                 <h3 class="f3 b lh-title mb1">{{.Params.title}}</h3>
                 <p>{{.Params.description}}</p>
                 <p>{{ if .Params.price }}${{.Params.price}}{{ end }}</p>
-                <a href="{{ .RelPermalink }}">View Gallery</a>
+                <a href="{{ .RelPermalink }}">View Item</a>
               </div>
             
             </div>
           {{ else }}
-          <div class="flex-m mhn3-m mb4">
+          <div class="flex-m mhn3-m mb4 items-center">
 
               <div class="ph3-m w-50-m order-last-m">
                 <img src="{{.Params.image}}" alt="" class="db mb2">
@@ -31,7 +31,7 @@
                 <h3 class="f3 b lh-title mb1">{{.Params.title}}</h3>
                 <p>{{.Params.description}}</p>
                 <p>{{ if .Params.price }}${{.Params.price}}{{ end }}</p>
-                <a href="{{ .RelPermalink }}">View Gallery</a>
+                <a href="{{ .RelPermalink }}">View Item</a>
               </div>
             
             </div>

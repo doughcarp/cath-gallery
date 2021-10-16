@@ -5,9 +5,16 @@
     max-height:100%;
     padding:10px;
 }
-
-.galleryshow .slick-dots li.slick-active button:before{
+.galleryshow .slick-dots li button, .galleryshow .slick-dots li button:before{
+  font-size:12px;
+}
+.galleryshow .slick-dots li button:before{
     color:#FFF;
+
+}
+.galleryshow .slick-dots li.slick-active button:before{
+    color:rgb(224, 19, 19);
+
 }
 
 nav a{
@@ -16,5 +23,9 @@ nav a{
     font-size:18px
 }
 body{
-    color:#FFF;
+    color:#333;
+}
+
+body p{
+    font-weight: 200;
 }
