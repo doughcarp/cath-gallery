@@ -1,6 +1,6 @@
 ---
 title: Girls and Glamour
-date: 2021-10-16T07:44:01.169Z
+date: 2021-10-26T09:12:58.864Z
 description: |-
   "Girls and Glamour" and "By a Long Neck"
   Available Tiffany Jones Fine Art. Buderim.
