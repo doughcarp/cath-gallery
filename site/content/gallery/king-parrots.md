@@ -5,6 +5,6 @@ description: |
   King Parrots. 76cm x 56 unframed size.
   Available Framed. 106cm x 86cm
 image: img/inbound5581802875869186402.jpg
-price: Sold.
+price: SOLD.
 ---
 ![]()
