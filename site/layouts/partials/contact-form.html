@@ -1,6 +1,6 @@
 <!-- Contact -->
 <div class="mb4">
-  <form action="" name="contact" method="POST" data-netlify="true">
+  <form action="https://api.formcake.com/api/form/9211afed-8fda-4e6e-89fb-30a67ec95130/submission" name="contact" method="POST" data-netlify="true" id="contact-form">
     <div class="flex-l mhn1-l">
       <!-- Name -->
       <div class="ph1-l w-50-l">
@@ -25,7 +25,15 @@
     </fieldset>
     <!-- Button -->
     <div class="tc">
-      <button type="submit" class="btn w-100 w-auto-ns raise">Submit</button>
+      <button
+          class="g-recaptcha btn w-100 w-auto-ns raise"
+          data-sitekey="6Lf6IyUaAAAAAPTTe__sC4052VzvGcwFlBHeajA0"
+          data-callback='onSubmit'
+          data-action='submit'
+          type="submit"
+      >
+          Submit
+      </button>
     </div>
   </form>
 </div>
