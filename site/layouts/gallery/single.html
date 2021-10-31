@@ -8,6 +8,26 @@
       <p>{{ .Description }}</p>
       {{ if .Params.image }}<img src="{{ .Params.image }}" alt="{{ .Title }}" />{{ end }}
       {{ .Content }}
+
+      {{ if .Params.image }}
+        <div class="mw7 center ph3 pv4">
+          <div class="flex flex-wrap mhn1">
+          {{ range .Params.gallery }}
+          
+            <div class="w-100 w-50-ns ph1-ns">
+              <img src="{{ . }}" />
+            </div>
+        
+            <!-- <div class="w-100 ph1-ns">
+              <img src="{{ . }}" />
+            </div> -->
+          
+          {{ end }}
+        </div>
+        </div>
+      {{ end }}
+
+      Price: ${{ .Params.price }}
     </div>
   </div>
 {{ end }}
