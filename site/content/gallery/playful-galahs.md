@@ -6,6 +6,6 @@ description: >-
 
   76cm x 56cm unframed size. 106xm x 86cm. Watercolour and Gouache on Arches paper.
 image: img/inbound2446832352038215230.jpg
-price: 2,250.
+price: SOLD.
 ---
 ![](img/inbound6482129252197617288.jpg)
