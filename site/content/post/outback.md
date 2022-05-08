@@ -1,6 +1,6 @@
 ---
 title: '"Outback"'
-date: 2022-05-08T19:29:40.609Z
+date: 2022-05-08T19:59:06.121Z
 description: |
   Gouache on canvas.
   75cm x 60cm
