@@ -5,6 +5,6 @@ description: |-
   "Yellow Tailed Black Cockatoo"
   40cm high.
 image: img/inbound2587024850416522212.jpg
-price: $250.
+price: SOLD
 ---
 ![]()
